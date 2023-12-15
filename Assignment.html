@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to eLearning</title>
+    <!-- Internal Styling -->
+    <style>
+        .zeros {
+            margin-top: -20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            font-stretch:expanded;
+        
+           
+        }
+
+        #zeroid {
+            font-family:'Times New Roman', Times, serif; 
+            font-style: italic;
+           
+            
+        }
+        .first {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .forms {
+            display: flex;
+            align-items: centre;
+            justify-content: center
+            
+        }
+
+        table, th, td{
+            border: 2px solid black;
+        }
+
+        
+
+    </style>
+</head>
+<body  style = "background-color: rgb(244, 244, 244);"">
+<header>
+    <div class="zeros">
+    <h1 style="color :rgb(148, 17, 146); font-size:70px; margin-bottom:-20px; "><b>eLearning</b></h1>
+    <h2 id ="zeroid"><b><u>Platform for your learning.</u><b></h2>
+    <p style = "font-size:20px;   font-family:'Times New Roman', Times, serif; font-style: italic;  text-align: center;">eLearning website only gives you the access to your lecture courses but 
+        also provides you content,<br>  notes, quiz and test of that particular course with free life access to these courses.<br>
+        So go and grab the courses with your amazing mindset.
+    </p>
+    </div>
+
+</header>
+<!--Added list-->
+    <div class ="content "style = "font-size:15px; font-family:'Courier New', Courier, monospace">
+            <ul style="padding-right:200px;">
+                <li>Web developement Languages</li><br>
+                <a href="https:www.google.com" target="_blank"><img src ="images2.png" alt="Web"></a><br>
+                <ol type="i"><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>Javascript</li><br>
+                    <li>python</li><br>
+                    <li>more</li><br>
+                </ol>
+            </ul>
+            <ul style="padding-right:200px;">
+                <li>Web developement Frameworks</li><br>
+                <a href="https:www.google.com" target="_blank"><img src ="download.jpeg" alt="Web"></a>
+                <ol type="i"><br>
+                    <li>Django</li><br>
+                    <li>ReactJs</li><br>
+                    <li>AngularJs</li><br>
+                    <li>Flask</li><br>
+                    <li>more</li>
+                </ol>
+
+                
+            </ul><br>
+
+            <ul>
+                <li>Web developement database</li><br>
+                <a href="https:www.google.com" target="_blank"><img src ="db.jpeg" alt="Web"></a>
+                <ol type="i"><br>
+                    <li>SQL</li><br>
+                    <li>MongoDB</li><br>
+                    <li>DynamoDb</li><br>
+                    <li>MysqlServer</li><br>
+                    <li>more</li>
+                </ol>
+
+                
+            </ul>
+    </div>
+
+    <p style="margin-left: 100px; text-decoration: underline;"><b>Kindly select the course you wish to select<b></p><br>
+
+    <!--Added Form-->
+    <div class="forms">
+
+        <form style="width: 20%; border:2px solid black; background-color: rgb(184, 135, 230); padding: 20px; ">
+
+            <label for="name" >Name : </label><br>
+            <input type="text" placeholder="Name" id="name"><br>
+
+            <label for="email">Email : </label><br>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" id="email"><br>
+
+            <label for="phn">Mobile : </label><br>
+            <input type="text" placeholder="Phone Number" id="phn"><br>
+
+            <label for="sub">Choose any language : </label>
+            <select id="sub">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+                <option value="python">python</option>
+                <option value="other">other</option>
+            </select><br>
+            <textarea name="message" rows="1" cols="20">Other language,if any</textarea><br>
+
+            <label for="fram">Choose any framework : </label>
+            <select id="frame">
+                <option value="django">Django</option>
+                <option value="react">ReactJs</option>
+                <option value="angular">AngularJs</option>
+                <option value="flask">Flask</option>
+                <option value="other">other</option>
+            </select><br>
+            <textarea name="message" rows="1" cols="20">Other framework,if any</textarea><br>
+
+            <label for="db">Choose any database : </label>
+            <select id="db">
+                <option value="sql">SQL</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="dynamodb">Dynamodb</option>
+                <option value="Mysqlserve">Mysqlserver</option>
+                <option value="other">other</option>
+            </select><br>
+            <textarea name="message" rows="1" cols="20">Other framework,if any</textarea><br>
+            <p>Choose where you want OTP</p>
+            <label for="otp">Email : </label>
+            <input type="radio" id="otp"  name="fav_language" value="Email"><br>
+            <label for="otp1">Phone Number : </label>
+            <input type="radio" id="otp1" name="fav_language" value="Phone Number"><br>
+            <label for="ch1"> I am not a robot</label>
+            <input type="checkbox" id="ch1" value="Bike"><br>
+            <input type="submit">
+
+        </form><br>
+
+<!--Added Table-->
+        <table style="width:50%; margin-left: 20%;">
+            <tr>
+                <th colspan="3" style="height: 20px;">Table of web developement data</th>
+            </tr>
+            <tr style="height:20px;   background-color: rgb(184, 135, 230);">
+                <th>Language</th>
+                <th>Frameworks</th>
+                <th>Database</th>
+            </tr>
+            <tr style="height:30px">
+                <td>Javascript</td>
+                <td>ReactJs</td>
+                <td>SQL</th>
+            </tr>
+            <tr style="height:30px">
+                <td>Python</td>
+                <td>Django</td>
+                <td>DynamoDb</th>
+            </tr>
+            <tr style="height:30px">
+                <td>Javascript</td>
+                <td>NodeJs</td>
+                <td>MongoDB</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <footer style="background-color: black; color:white; margin-top: 50px; text-align: center;">
+        eLearning by Kaushiki Chopra.
+    </footer>
+
+
+
+
+    
+    
+
+
+</body>
+</html> 
